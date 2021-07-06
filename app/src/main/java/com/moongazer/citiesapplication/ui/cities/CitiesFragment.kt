@@ -35,11 +35,12 @@ class CitiesFragment : BaseFragment(R.layout.fragment_cities) {
         }
         binding.swipeRefreshLayout.setOnRefreshListener {
             viewModel.clearCities()
-            viewModel.fetchCities()
+            fetchData()
         }
     }
 
     private fun fetchData() {
+        binding.recyclerView.adapter?.notifyDataSetChanged()
         collectFlow(viewModel.fetchCities()) {
             binding.recyclerView.adapter?.notifyDataSetChanged()
         }

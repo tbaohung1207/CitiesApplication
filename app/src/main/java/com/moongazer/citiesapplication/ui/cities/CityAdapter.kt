@@ -3,6 +3,7 @@ package com.moongazer.citiesapplication.ui.cities
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.moongazer.citiesapplication.R
 import com.moongazer.citiesapplication.data.models.City
 import com.moongazer.citiesapplication.databinding.ItemCityBinding
 
@@ -25,10 +26,11 @@ class CityAdapter(private val cities: List<City>) :
     /**
      * Holder for item city
      */
-    class ItemCityViewHolder(private val itemView: ItemCityBinding) :
-        RecyclerView.ViewHolder(itemView.root) {
+    class ItemCityViewHolder(private val binding: ItemCityBinding) :
+        RecyclerView.ViewHolder(binding.root) {
         fun bind(city: City) {
-
+            binding.tvTitle.text = city.title
+            binding.tvLatLng.text = itemView.context.getString(R.string.city_lat_lng, city.lat, city.lng)
         }
     }
 }
