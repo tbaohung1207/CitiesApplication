@@ -1,7 +1,7 @@
-package com.android.appname.arch.extensions
+package com.moongazer.citiesapplication.arch.extensions
 
-import com.android.appname.data.error.RepositoryException
 import com.moongazer.citiesapplication.data.error.ErrorModel
+import com.moongazer.citiesapplication.data.error.RepositoryException
 import retrofit2.Response
 import java.net.ConnectException
 import java.net.SocketTimeoutException

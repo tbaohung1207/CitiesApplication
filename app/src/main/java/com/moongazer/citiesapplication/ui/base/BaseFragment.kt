@@ -7,8 +7,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.loadingFlow
 import androidx.lifecycle.viewErrorFlow
-import com.android.appname.arch.extensions.LoadingAware
-import com.android.appname.arch.extensions.ViewErrorAware
+import com.moongazer.citiesapplication.arch.extensions.LoadingAware
+import com.moongazer.citiesapplication.arch.extensions.ViewErrorAware
 import com.moongazer.citiesapplication.arch.extensions.collectFlow
 import com.moongazer.citiesapplication.ui.widgets.CustomProgressDialog
 import dagger.hilt.android.AndroidEntryPoint

@@ -6,6 +6,6 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface Api {
-    @GET("/location/search")
-    fun findLocation(@Query("query") query: String): Response<List<LocationResponse>>
+    @GET("api/location/search")
+    suspend fun findLocation(@Query("query") query: String): Response<List<LocationResponse>>
 }

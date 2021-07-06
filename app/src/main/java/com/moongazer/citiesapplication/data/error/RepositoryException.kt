@@ -1,4 +1,4 @@
-package com.android.appname.data.error
+package com.moongazer.citiesapplication.data.error
 
 data class RepositoryException(
     val code: Int,

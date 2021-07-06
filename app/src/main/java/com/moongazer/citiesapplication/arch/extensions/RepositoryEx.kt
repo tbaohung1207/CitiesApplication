@@ -1,6 +1,5 @@
 package com.moongazer.citiesapplication.arch.extensions
 
-import com.android.appname.arch.extensions.toError
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import retrofit2.Response

@@ -29,11 +29,11 @@ class CityRepository @Inject constructor(
         }
     }
 
-    override fun addCities(vararg cities: City) {
+    override suspend fun addCities(vararg cities: City) {
         cityLocalDatasource.addCities(*cities)
     }
 
-    override fun deleteCity(city: City) {
+    override suspend fun deleteCity(city: City) {
         cityLocalDatasource.deleteCity(city)
     }
 }

@@ -5,7 +5,7 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.OnLifecycleEvent
 import androidx.viewbinding.ViewBinding
-import com.android.appname.arch.extensions.ensureMainThread
+import com.moongazer.citiesapplication.arch.extensions.ensureMainThread
 import com.moongazer.citiesapplication.ui.base.BaseActivity
 import kotlin.properties.ReadOnlyProperty
 import kotlin.reflect.KProperty

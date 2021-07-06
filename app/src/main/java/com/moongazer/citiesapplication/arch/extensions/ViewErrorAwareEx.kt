@@ -1,4 +1,4 @@
-package com.android.appname.arch.extensions
+package com.moongazer.citiesapplication.arch.extensions
 
 interface ViewErrorAware
 

@@ -55,11 +55,11 @@ android {
     applicationVariants.all {
         when (name) {
             "debug" -> {
-                buildConfigField("String", "API_URL", """"https://www.metaweather.com/api"""")
+                buildConfigField("String", "API_URL", """"https://www.metaweather.com/"""")
             }
 
             "release" -> {
-                buildConfigField("String", "API_URL", """"https://www.metaweather.com/api"""")
+                buildConfigField("String", "API_URL", """"https://www.metaweather.com/"""")
             }
         }
     }
@@ -99,4 +99,5 @@ dependencies {
     kapt("androidx.room:room-compiler:2.3.0")
     implementation("androidx.room:room-ktx:2.3.0")
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+    implementation("com.github.bumptech.glide:glide:4.12.0")
 }

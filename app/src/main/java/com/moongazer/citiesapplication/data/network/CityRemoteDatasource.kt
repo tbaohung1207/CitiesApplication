@@ -26,11 +26,11 @@ class CityRemoteDatasource @Inject constructor(private val api: Api) : CityDatas
             }
         }
 
-    override fun addCities(vararg cities: City) {
+    override suspend fun addCities(vararg cities: City) {
         // Ignore
     }
 
-    override fun deleteCity(city: City) {
+    override suspend fun deleteCity(city: City) {
         // Ignore
     }
 }

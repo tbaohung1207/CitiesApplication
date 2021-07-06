@@ -1,6 +1,5 @@
 package com.moongazer.citiesapplication.arch.extensions
 
-import com.android.appname.arch.extensions.toError
 import com.moongazer.citiesapplication.data.error.ErrorModel
 import kotlinx.coroutines.flow.*
 
@@ -26,7 +25,6 @@ inline fun <T> safeFlow(
     } catch (e: ErrorModel) {
         emit(FlowResult.Error(e))
     } catch (e: Exception) {
-        e.printStackTrace()
         emit(FlowResult.Error(e.toError()))
     }
 }

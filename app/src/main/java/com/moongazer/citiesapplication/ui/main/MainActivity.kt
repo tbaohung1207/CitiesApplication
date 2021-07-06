@@ -1,6 +1,6 @@
 package com.moongazer.citiesapplication.ui.main
 
-import com.android.appname.arch.extensions.viewBinding
+import com.moongazer.citiesapplication.arch.extensions.viewBinding
 import com.moongazer.citiesapplication.R
 import com.moongazer.citiesapplication.arch.extensions.replaceFragment
 import com.moongazer.citiesapplication.databinding.ActivityMainBinding

@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.Flow
 interface CityDatasource {
     fun getCities(query: String): Flow<FlowResult<List<City>>>
 
-    fun addCities(vararg cities: City)
+    suspend fun addCities(vararg cities: City)
 
-    fun deleteCity(city: City)
+    suspend fun deleteCity(city: City)
 }

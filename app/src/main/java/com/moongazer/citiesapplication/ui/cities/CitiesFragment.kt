@@ -4,12 +4,11 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.android.appname.arch.extensions.viewBinding
 import com.moongazer.citiesapplication.R
 import com.moongazer.citiesapplication.arch.extensions.collectFlow
+import com.moongazer.citiesapplication.arch.extensions.viewBinding
 import com.moongazer.citiesapplication.databinding.FragmentCitiesBinding
 import com.moongazer.citiesapplication.ui.base.BaseFragment
-import kotlinx.coroutines.flow.collect
 
 class CitiesFragment : BaseFragment(R.layout.fragment_cities) {
     companion object {
@@ -36,6 +35,7 @@ class CitiesFragment : BaseFragment(R.layout.fragment_cities) {
         binding.swipeRefreshLayout.setOnRefreshListener {
             viewModel.clearCities()
             fetchData()
+            binding.swipeRefreshLayout.isRefreshing = false
         }
     }
 

@@ -3,9 +3,9 @@ package com.moongazer.citiesapplication.ui.cities
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.bindCommonError
 import androidx.lifecycle.bindLoading
-import com.android.appname.arch.extensions.LoadingAware
-import com.android.appname.arch.extensions.ViewErrorAware
 import com.moongazer.citiesapplication.arch.extensions.FlowResult
+import com.moongazer.citiesapplication.arch.extensions.LoadingAware
+import com.moongazer.citiesapplication.arch.extensions.ViewErrorAware
 import com.moongazer.citiesapplication.arch.extensions.onEachSuccess
 import com.moongazer.citiesapplication.data.CityRepository
 import com.moongazer.citiesapplication.data.models.City
